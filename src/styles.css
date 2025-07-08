@@ -7,7 +7,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -26,4 +26,116 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: var(--blue-700);
+  color: var(--blue-700);
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+li {
+  display: flex;
+  column-gap: 15px;
+}
+
+li img {
+  align-self: flex-start;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  color: var(--white);
+  text-align: center;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 375px;
+}
+
+.newsletter__body {
+  padding: 42px 22px;
+}
+
+.newsletter__body h1 {
+  margin-bottom: 22px;
+  font-size: 40px;
+}
+
+.newsletter__body p {
+  margin-bottom: 24px;
+}
+
+.newsletter__body__list {
+  margin-bottom: 40px;
+}
+
+.newsletter__body__form label {
+  margin-bottom: 12px;
+}
+
+.newsletter__body__form input {
+  padding: 17px 22px;
+  border-radius: 10px;
+  border-color: var(--grey);
+  margin-bottom: 23px;
+}
+
+.newsletter__body__form button {
+  background-color: var(--blue-800);
+  padding: 20px 43px;
+  font-weight: bold;
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+}
+
+input::placeholder,
+input::-moz-placeholder {
+  color: var(--grey);
+  opacity: 1;
+}
+
+@media (min-width: 601px) {
+  .newsletter {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1000px) {
+  .newsletter {
+    flex-direction: row;
+    width: 929px;
+    padding: 23px 23px;
+  }
+
+  .newsletter__body h1 {
+    font-size: 50px;
+  }
+
+  .newsletter__body {
+    order: 1;
+  }
+  .newsletter__img {
+    order: 2;
+  }
 }

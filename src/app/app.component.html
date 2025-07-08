@@ -1,33 +1,45 @@
 <main>
   <section class="newsletter">
-    <picture>
+    <picture class="newsletter__img">
       <source
-        media="(max-width: 600px)"
-        srcset="assets/images/illustration-sign-up-mobile.svg"
+        media="(min-width: 1000px)"
+        srcset="assets/images/illustration-sign-up-desktop.svg"
         type="image/svg+xml"
       />
-      <!-- <source
+      <source
         media="(min-width: 601px)"
         srcset="assets/images/illustration-sign-up-tablet.svg"
         type="image/svg+xml"
-      /> -->
+      />
+
       <img
         src="assets/images/illustration-sign-up-mobile.svg"
         alt="newsletter img"
       />
     </picture>
-    <h1 class="newsletter__title">Stay updated!</h1>
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    <ul>
-      <li>Product discovery and building what matters</li>
-      <li>Measuring to ensure updates are a success</li>
-      <li>And much more!</li>
-    </ul>
-    <form>
-      <label for="email">Email address</label>
-      <input type="text" placeholder="email@company.com" />
-      <button>Subscribe to monthly newsletter</button>
-    </form>
+    <div class="newsletter__body">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="newsletter__body__list">
+        <li>
+          <img src="assets/images/icon-list.svg" alt="icon list" />
+          Product discovery and building what matters
+        </li>
+        <li>
+          <img src="assets/images/icon-list.svg" alt="icon list" />
+          Measuring to ensure updates are a success
+        </li>
+        <li>
+          <img src="assets/images/icon-list.svg" alt="icon list" />
+          And much more!
+        </li>
+      </ul>
+      <form class="newsletter__body__form">
+        <label for="email">Email address</label>
+        <input type="text" placeholder="email@company.com" />
+        <button>Subscribe to monthly newsletter</button>
+      </form>
+    </div>
   </section>
 </main>
 
